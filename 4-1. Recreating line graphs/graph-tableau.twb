@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook original-version='10.5' source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (PewCollegeData)' inline='true' name='federated.0evoctp1fhfctv16p47dz1smp7a0' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PewCollegeData' name='excel-direct.1qjkxiq0bfnlhk1eamomb168umkk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/OneDrive/University of Washington Seattle/Year 3 Quarter 3 (Spring)/INFO 362/4-1. Recreating line graphs/PewCollegeData.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1qjkxiq0bfnlhk1eamomb168umkk' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D6:no:A1:D6:0' header='yes' outcome='6'>
+            <column datatype='string' name='Cohort' ordinal='0' />
+            <column datatype='integer' name='Bachelor&apos;s degree or more' ordinal='1' />
+            <column datatype='integer' name='Two-year degree/Some college' ordinal='2' />
+            <column datatype='integer' name='High school graduate' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Cohort</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cohort]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Cohort</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bachelor&apos;s degree or more</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bachelor&apos;s degree or more]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Bachelor&apos;s degree or more</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Two-year degree/Some college</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Two-year degree/Some college]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Two-year degree/Some college</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High school graduate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[High school graduate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>High school graduate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D6:no:A1:D6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Bachelor&apos;s degree or more]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[High school graduate]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Two-year degree/Some college]' role='measure' type='quantitative' />
+      <column-instance column='[Bachelor&apos;s degree or more]' derivation='Sum' name='[sum:Bachelor&apos;s degree or more:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[High school graduate]' derivation='Sum' name='[sum:High school graduate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Two-year degree/Some college]' derivation='Sum' name='[sum:Two-year degree/Some college:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.482667' measure-ordering='alphabetic' measure-percentage='0.517333' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0evoctp1fhfctv16p47dz1smp7a0].[sum:Bachelor&apos;s degree or more:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0evoctp1fhfctv16p47dz1smp7a0].[sum:Two-year degree/Some college:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0evoctp1fhfctv16p47dz1smp7a0].[sum:High school graduate:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PewCollegeData)' name='federated.0evoctp1fhfctv16p47dz1smp7a0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0evoctp1fhfctv16p47dz1smp7a0'>
+            <column datatype='integer' name='[Bachelor&apos;s degree or more]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Cohort]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[High school graduate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Two-year degree/Some college]' role='measure' type='quantitative' />
+            <column-instance column='[Cohort]' derivation='None' name='[none:Cohort:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bachelor&apos;s degree or more]' derivation='Sum' name='[sum:Bachelor&apos;s degree or more:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[High school graduate]' derivation='Sum' name='[sum:High school graduate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Two-year degree/Some college]' derivation='Sum' name='[sum:Two-year degree/Some college:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0evoctp1fhfctv16p47dz1smp7a0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0evoctp1fhfctv16p47dz1smp7a0].[sum:Bachelor&apos;s degree or more:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0evoctp1fhfctv16p47dz1smp7a0].[sum:High school graduate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0evoctp1fhfctv16p47dz1smp7a0].[sum:Two-year degree/Some college:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.0evoctp1fhfctv16p47dz1smp7a0].[none:Cohort:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Silents (in 1965)&quot;</bucket>
+              <bucket>&quot;Early Boomers (in 1979)&quot;</bucket>
+              <bucket>&quot;Late Bloomers (in 1986)&quot;</bucket>
+              <bucket>&quot;Gen Xers (in 1995)&quot;</bucket>
+              <bucket>&quot;Millennials (in 2013)&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.0evoctp1fhfctv16p47dz1smp7a0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0evoctp1fhfctv16p47dz1smp7a0].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0evoctp1fhfctv16p47dz1smp7a0].[Multiple Values]</rows>
+        <cols>[federated.0evoctp1fhfctv16p47dz1smp7a0].[none:Cohort:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0evoctp1fhfctv16p47dz1smp7a0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0evoctp1fhfctv16p47dz1smp7a0].[:Measure Names]</field>
+            <field>[federated.0evoctp1fhfctv16p47dz1smp7a0].[none:Cohort:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0416.1335                               -->
+<workbook original-version='18.1' source-build='2018.1.0 (20181.18.0416.1335)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='362_more_blue' type='ordered-diverging'>
+      <color>#ed8768</color>
+      <color>#f2a286</color>
+      <color>#c2e7ef</color>
+      <color>#7fd1e9</color>
+      <color>#72abd0</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (1year_data_final)' inline='true' name='federated.0nq4i170thwao018rmftk0qq6ipw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1year_data_final' name='excel-direct.1ulhwnr0cypljf19stmjg0ccek11'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/OneDrive/University of Washington Seattle/Year 3 Quarter 3 (Spring)/INFO 362/7-2. Location/1year_data_final.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ulhwnr0cypljf19stmjg0ccek11' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:G206:no:A1:G206:0' header='yes' outcome='2'>
+            <column datatype='string' name='Currency_code' ordinal='0' />
+            <column datatype='real' name='Volume BTC transactions' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+            <column datatype='integer' name='Population' ordinal='3' />
+            <column datatype='real' name='btc volume traded per capita' ordinal='4' />
+            <column datatype='real' name='average local btc ownership per 100k people' ordinal='5' />
+            <column datatype='real' name='log ownership' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Currency_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Currency_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Currency_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume BTC transactions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volume BTC transactions]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Volume BTC transactions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>btc volume traded per capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[btc volume traded per capita]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>btc volume traded per capita</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average local btc ownership per 100k people</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average local btc ownership per 100k people]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>average local btc ownership per 100k people</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>log ownership</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[log ownership]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>log ownership</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G206:no:A1:G206:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Kinshasa)&quot;' />
+          <semantic-value key='&quot;Rome&quot;' value='&quot;Romania&quot;' />
+          <semantic-value key='&quot;Saint Kitts &amp; Nevis Anguilla&quot;' value='&quot;Saint Kitts and Nevis&quot;' />
+          <semantic-value key='&quot;Saint Vincent &amp; Grenadines&quot;' value='&quot;Saint Vincent and the Grenadines&quot;' />
+          <semantic-value key='&quot;Timon Leste&quot;' value='&quot;Timor-Leste&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Currency code' datatype='string' name='[Currency_code]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Average Local Btc Ownership Per 100K People' datatype='real' name='[average local btc ownership per 100k people]' role='measure' type='quantitative' />
+      <column caption='Btc Volume Traded Per Capita' datatype='real' name='[btc volume traded per capita]' role='measure' type='quantitative' />
+      <column caption='Log Ownership' datatype='real' name='[log ownership]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.466382' measure-ordering='alphabetic' measure-percentage='0.533618' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (1year_data_final)' name='federated.0nq4i170thwao018rmftk0qq6ipw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0nq4i170thwao018rmftk0qq6ipw'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Kinshasa)&quot;' />
+                <semantic-value key='&quot;Rome&quot;' value='&quot;Romania&quot;' />
+                <semantic-value key='&quot;Saint Kitts &amp; Nevis Anguilla&quot;' value='&quot;Saint Kitts and Nevis&quot;' />
+                <semantic-value key='&quot;Saint Vincent &amp; Grenadines&quot;' value='&quot;Saint Vincent and the Grenadines&quot;' />
+                <semantic-value key='&quot;Timon Leste&quot;' value='&quot;Timor-Leste&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Log Ownership' datatype='real' name='[log ownership]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[log ownership]' derivation='Sum' name='[sum:log ownership:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0nq4i170thwao018rmftk0qq6ipw].[Longitude (generated)]' field-type='quantitative' max='33553854.629945982' min='-30760614.993332308' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0nq4i170thwao018rmftk0qq6ipw].[Latitude (generated)]' field-type='quantitative' max='18871740.490816493' min='-17545112.665075138' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='2.0' field='[federated.0nq4i170thwao018rmftk0qq6ipw].[sum:log ownership:qk]' max='5.0' min='-1.0' num-steps='5' palette='362_more_blue' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0nq4i170thwao018rmftk0qq6ipw].[sum:log ownership:qk]' />
+              <lod column='[federated.0nq4i170thwao018rmftk0qq6ipw].[none:Country:nk]' />
+              <geometry column='[federated.0nq4i170thwao018rmftk0qq6ipw].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nq4i170thwao018rmftk0qq6ipw].[Latitude (generated)]</rows>
+        <cols>[federated.0nq4i170thwao018rmftk0qq6ipw].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nq4i170thwao018rmftk0qq6ipw].[sum:log ownership:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

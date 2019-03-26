@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook original-version='10.5' source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Entrance Master  (IMADataForExercise (1))' inline='true' name='federated.082tnnj1wno9u21cjguu703jlw8u' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IMADataForExercise (1)' name='excel-direct.0d5ap131qht9z615x5ksl0mzaox0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/OneDrive/University of Washington Seattle/Year 3 Quarter 3 (Spring)/INFO 362/6-1. Excel Pivot table/IMADataForExercise (1).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0d5ap131qht9z615x5ksl0mzaox0' name='Entrance Master ' table='[&apos;Entrance Master $&apos;]' type='table'>
+          <columns gridOrigin='A1:H4676:no:A1:H4676:0' header='yes' outcome='2'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='datetime' name='Time' ordinal='1' />
+            <column datatype='integer' name='Male Students' ordinal='2' />
+            <column datatype='integer' name='Female Students' ordinal='3' />
+            <column datatype='integer' name='Male Faculty/Staff' ordinal='4' />
+            <column datatype='integer' name='Female Faculty/Staff' ordinal='5' />
+            <column datatype='integer' name='Male Guests' ordinal='6' />
+            <column datatype='integer' name='Female Guests' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male Students</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male Students]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Male Students</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female Students</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female Students]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Female Students</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male Faculty/Staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male Faculty/Staff]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Male Faculty/Staff</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female Faculty/Staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female Faculty/Staff]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Female Faculty/Staff</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male Guests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male Guests]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Male Guests</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female Guests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female Guests]</local-name>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias>Female Guests</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Entrance Master ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H4676:no:A1:H4676:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Female Faculty/Staff]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Female Guests]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Female Students]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Male Faculty/Staff]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Male Guests]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Male Students]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Female Faculty/Staff]' derivation='Avg' name='[avg:Female Faculty/Staff:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Female Guests]' derivation='Avg' name='[avg:Female Guests:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Female Students]' derivation='Avg' name='[avg:Female Students:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Male Faculty/Staff]' derivation='Avg' name='[avg:Male Faculty/Staff:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Male Guests]' derivation='Avg' name='[avg:Male Guests:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Male Students]' derivation='Avg' name='[avg:Male Students:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.472' measure-ordering='alphabetic' measure-percentage='0.528' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Faculty/Staff:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Guests:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Faculty/Staff:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Students:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Students:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Guests:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Entrance Master  (IMADataForExercise (1))' name='federated.082tnnj1wno9u21cjguu703jlw8u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.082tnnj1wno9u21cjguu703jlw8u'>
+            <column datatype='integer' name='[Female Faculty/Staff]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Female Guests]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Female Students]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Male Faculty/Staff]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Male Guests]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Male Students]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+            <column-instance column='[Female Faculty/Staff]' derivation='Avg' name='[avg:Female Faculty/Staff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Female Guests]' derivation='Avg' name='[avg:Female Guests:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Female Students]' derivation='Avg' name='[avg:Female Students:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Male Faculty/Staff]' derivation='Avg' name='[avg:Male Faculty/Staff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Male Guests]' derivation='Avg' name='[avg:Male Guests:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Male Students]' derivation='Avg' name='[avg:Male Students:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time]' derivation='Hour' name='[hr:Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Faculty/Staff:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Guests:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Students:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Faculty/Staff:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Guests:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Students:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Number of Records:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Guests:qk]&quot;</bucket>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Guests:qk]&quot;</bucket>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Faculty/Staff:qk]&quot;</bucket>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Faculty/Staff:qk]&quot;</bucket>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Female Students:qk]&quot;</bucket>
+              <bucket>&quot;[federated.082tnnj1wno9u21cjguu703jlw8u].[avg:Male Students:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.082tnnj1wno9u21cjguu703jlw8u].[hr:Time:ok]' value='ih a' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]' />
+              <lod column='[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.082tnnj1wno9u21cjguu703jlw8u].[Multiple Values]</rows>
+        <cols>[federated.082tnnj1wno9u21cjguu703jlw8u].[hr:Time:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.082tnnj1wno9u21cjguu703jlw8u].[:Measure Names]</field>
+            <field>[federated.082tnnj1wno9u21cjguu703jlw8u].[yr:Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

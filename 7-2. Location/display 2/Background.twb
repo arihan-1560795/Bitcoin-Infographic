@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0416.1335                               -->
+<workbook original-version='18.1' source-build='2018.1.0 (20181.18.0416.1335)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Countries (countriesoftheworld)' inline='true' name='federated.17j9xbk1t78qi91e4ifnx0fw377t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='countriesoftheworld' name='excel-direct.0oeb6cl1e1hr5j1h46fbx05vvinu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/OneDrive/University of Washington Seattle/Year 3 Quarter 3 (Spring)/INFO 362/7-2. Location/countriesoftheworld.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0oeb6cl1e1hr5j1h46fbx05vvinu' name='Countries' table='[Countries$]' type='table'>
+          <columns gridOrigin='A1:B215:no:A1:B215:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Countries]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Countries]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Countries]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B215:no:A1:B215:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.483458' measure-ordering='alphabetic' measure-percentage='0.516542' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Countries (countriesoftheworld)' name='federated.17j9xbk1t78qi91e4ifnx0fw377t' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.17j9xbk1t78qi91e4ifnx0fw377t'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[Longitude (generated)]' field-type='quantitative' max='33584584.853782333' min='-30888438.22049772' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[Latitude (generated)]' field-type='quantitative' max='18568054.140241791' min='-17937694.667478781' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[sum:Number of Records:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ededee</color>
+                <color>#eaeaeb</color>
+                <color>#e7e7e8</color>
+                <color>#e3e4e5</color>
+                <color>#e0e0e2</color>
+                <color>#dddddf</color>
+                <color>#d9dadc</color>
+                <color>#d6d7d9</color>
+                <color>#d3d4d6</color>
+                <color>#d0d1d3</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[sum:Number of Records:qk]' />
+              <lod column='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[none:Country:nk]' />
+              <geometry column='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17j9xbk1t78qi91e4ifnx0fw377t].[Latitude (generated)]</rows>
+        <cols>[federated.17j9xbk1t78qi91e4ifnx0fw377t].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17j9xbk1t78qi91e4ifnx0fw377t].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
